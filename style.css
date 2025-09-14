@@ -1,0 +1,47 @@
+/* --- General Styles --- */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+/* Box for animation */
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c;
+  margin: 20px;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* Keyframe animation example */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin {
+  animation: spin 2s linear infinite;
+}
